@@ -2,7 +2,7 @@ import json
 from ibm_watson import TextToSpeechV1
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 
-authenticator = IAMAuthenticator('ElyUdfUdF_Buwsh_cYoUgdcrOHl-rYsowwrW6wkOD33d')
+authenticator = IAMAuthenticator('MY_KEY')
 text_to_speech = TextToSpeechV1(
     authenticator=authenticator
 )
@@ -15,7 +15,7 @@ voice = text_to_speech.get_voice('en-US_AllisonV3Voice').get_result()
 with open('holy moly.wav', 'wb') as audio_file:
     audio_file.write(
         text_to_speech.synthesize(
-            '',
-            voice='ja-JP_EmiV3Voice',
+            'holy moly guacamole robo-car poly',
+            voice='en-US_AllisonV3Voice',
             accept='audio/wav'        
         ).get_result().content)
