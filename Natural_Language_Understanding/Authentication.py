@@ -5,7 +5,7 @@ from ibm_watson.natural_language_understanding_v1 \
     import Features, EmotionOptions, ConceptsOptions, CategoriesOptions, EntitiesOptions, KeywordsOptions
     
 # 서비스 시작이 얻는 API Key 입력
-authenticator = IAMAuthenticator('Ad_Q-VvVr7jsg4Q-4Uxm6ZgBMEsay7-X9QovXDpo_q_F')
+authenticator = IAMAuthenticator('MY_KEY')
 natural_language_understanding = NaturalLanguageUnderstandingV1(
     version='2020-08-01',          # API 문서 참조
     authenticator=authenticator
