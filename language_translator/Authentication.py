@@ -2,7 +2,7 @@ import json
 from ibm_watson import LanguageTranslatorV3
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 
-authenticator = IAMAuthenticator('gB_xUdK025vo_Wa7-vKlDu38TbjG257m88qDNP_txY-p')
+authenticator = IAMAuthenticator('MY_KEY')
 language_translator = LanguageTranslatorV3(
     version='2018-05-01',
     authenticator=authenticator
